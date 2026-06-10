@@ -1,0 +1,27 @@
+{
+  "name": "driftwood",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Driftwood — tells noise from news. A Gemini agent that profiles the SHAPE of the data feeding your Splunk detections and classifies a fired alert as schema drift (noise) or a real incident (news).",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "seed": "node scripts/seed.mjs",
+    "mcp": "node mcp/server.mjs"
+  },
+  "dependencies": {
+    "google-auth-library": "^9.15.0",
+    "next": "15.5.19",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
