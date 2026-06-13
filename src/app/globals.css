@@ -1,0 +1,60 @@
+/* ===== Driftwood — THW skin: cream + ink + amber/teal, enterprise-clean, no red anywhere ===== */
+:root {
+  --cream: #f5f3ef;
+  --panel: #ffffff;
+  --ink: #1e2a32;
+  --ink2: #3a4458;
+  --accent: #e0a03c; /* NOISE — warm amber, calm not alarming */
+  --accent2: #3e7c77; /* NEWS + in-band forecast corridor — muted teal */
+  --line: #e4e0d8;
+  --muted: #7c8597;
+  --good: #3e7c77;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: "Consolas", "SF Mono", ui-monospace, "Roboto Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---- app shell ---- */
+.shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---- left nav ---- */
+.nav {
+  width: 230px;
+  background: var(--ink);
+  color: #e9ecf2;
+  padding: 22px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  flex: none;
+}
+.nav .brand {
+  font-weight: 800;
+  font-size: 26px;
